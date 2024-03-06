@@ -1,0 +1,105 @@
+.confirmation-dialog {
+    height: min(65%, 1000px);
+    width: 100%;
+    margin-inline: auto;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+}
+/* .for-customer-select {
+    align-items: unset;
+} */
+.confirmation-holder {
+    height: 200px;
+    position: relative;
+    width: 500px;
+    background-color: var(--dark-mode);
+    border-radius: 5px ;
+    box-shadow: 1px 1px 4px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.confirmation-dialog .c-header {
+    width: 100%;
+    height: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-clr);
+    padding: 2px;
+}
+
+.confirmation-dialog .c-header p {
+    color: white;
+}
+
+.confirmation-dialog .c-body {
+    display: flex;
+    width: 98%;
+    margin-inline: auto;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+.confirmation-dialog span {
+    font-size: 70px;
+    color: var(--box-shadow);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-clr);
+}
+
+.confirmation-dialog p {
+    font-size: 17px;
+    /* text-align: center; */
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: var(--text-clr);
+    width: 150px;
+}
+.confirmation-dialog .customer-selected {
+    width: 90%;
+    margin-inline: auto;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.confirmation-dialog .b-tons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+.confirmation-dialog .buttons {
+    width: 100px;
+    height: 30px;
+    background-color: var(--main-clr);
+    border: .5px solid transparent;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', cursive;
+    display: flex;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.confirmation-dialog .buttons:hover {
+    background-color: var(--button-hover);
+}

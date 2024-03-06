@@ -1,0 +1,40 @@
+.shortcut-key-holder {
+    position: absolute;
+    background-color: var(--dark-mode);
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    height: min(90%, 500px);
+    padding: 12px;
+    z-index: 999 !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--box-shadow);
+    
+}
+
+.shortcut-key-holder table {
+    border-collapse: unset;
+    background-color: var(--dark-mode);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--box-shadow)
+}
+
+.shortcut-key-holder table th {
+    resize: unset;
+}
+
+.shortcut-key-holder .buttons button {
+    width: 100px;
+    height: 35px;
+    background-color: var(--main-clr);
+    color: white;
+    border: 0;
+    font-family:'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+}
+.shortcut-key-holder .buttons button:hover {
+    background-color: var(--button-hover);
+}

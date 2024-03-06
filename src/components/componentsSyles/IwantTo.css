@@ -1,0 +1,72 @@
+.want-to-menu{
+    position: absolute;
+    z-index: 3;
+    top: 090px;
+    width: 200px;
+    padding: 5px; 
+    padding-left: 25px;
+    background-color: var(--bg-clr);
+    border-radius: 5px;
+    display: flex;
+    border: .5px solid var(--border-clr);
+    overflow: hidden;
+    background-color: var(--dark-mode);
+}
+
+@media screen and (max-height: 750px) {
+    .want-to-menu {
+        height: 500px;
+        overflow-y:auto;
+    }
+}
+
+.want-to-menu::after {
+    content: 'Home Sales     ';
+    height: 100%;
+    width: 20px;
+    background-color: var(--extra-clr);
+    position: absolute;
+    left: 0;
+    top: 0;
+    writing-mode:vertical-rl;
+    text-orientation:mixed;
+    color: white;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: rotate(180deg);
+    text-align: right;
+    
+}
+
+.want-to-menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.want-to-menu ul hr {
+    margin-top: 5px;
+}
+
+.want-to-menu li {
+    height: 30px;
+    cursor: pointer;
+    justify-content: left;
+    margin-bottom: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-clr);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--text-clr);
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.want-to-menu li i {
+    font-size: 20px;
+    color: var(--text-clr);
+}
+.want-to-menu li:hover {
+    box-shadow: 1px 1px 4px var(--box-shadow);
+    background-color: transparent;
+}

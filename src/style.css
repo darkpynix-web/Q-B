@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caprasimo&family=Monoton&family=Orbitron:wght@400;500;600&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.app {
+    height: 100%;
+    width: 100%;
+    margin-inline: auto;
+    background-color: var(--bg-clr);
+    overflow-y: scroll;
+}
+
+/* Disable increment and decrement arrows for all number input elements */
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  
+  /* Disable increment and decrement arrows for WebKit-based browsers (Safari, Chrome) */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Removes the margin for the buttons */
+  }

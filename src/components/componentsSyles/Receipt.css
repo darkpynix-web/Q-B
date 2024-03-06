@@ -1,0 +1,355 @@
+.receipt-holder-box {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    position: absolute;
+    height: 88%;
+    width: 99.5%;
+    gap: none;
+    margin-top: 20px;
+}
+
+
+.receipt-control-box,
+.item-lister,
+.payments-box,
+.calculator-box {
+    border: .5px solid var(--border-clr);
+    width: 99.5%;
+    min-width: 99.5%;
+    margin-inline: auto;
+    border-radius: unset;
+    background: transparent !important;
+
+}
+/* .held-calculator-box {
+    position: absolute;
+} */
+
+.receipt-holder-box .item-lister {
+    position: relative !important;
+    height: 70%;
+    padding: 10px !important;
+    margin-inline: auto;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    overflow: scroll !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-lister-table {
+    min-width: 1000px !important;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.receipt-holder-box .item-lister .item-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.item-lister td {
+    text-overflow: ellipsis;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+.item-lister td input {
+    width: 40px;
+    color: var(--text-clr);
+    text-align: center;
+    margin-inline: auto;
+    background-color: transparent;
+    border: none;
+    outline-color: none;
+    counter-increment: none;
+    resize: none;
+}
+
+.item-lister .user-profile {
+    border: 2px solid var(--main-clr) !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.item-lister td img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.item-lister td button {
+    display: none;
+}
+
+.item-lister td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+    text-align: center;
+}
+
+.item-lister thead {
+    border: .2px solid var(--border-clr);
+}
+
+.item-lister th {
+    position: relative;
+    border-radius: unset;
+    background-color: var(--bg-clr) !important;
+    font-weight: lighter !important;
+    flex-shrink: 0;
+
+}
+
+
+.item-lister th::after {
+    content: '';
+    height: 25px;
+    width: 1px;
+    background-color: var(--border-clr);
+    position: absolute;
+    top: 7px;
+    margin-left: 5px;
+    right: 0;
+    cursor: w-resize;
+}
+
+.item-lister th:nth-child(5)::after {
+    content: unset;
+}
+
+.miracle td {
+    background-color: var(--extra2-clr);
+    color: black;
+    height: 65px;
+    border-top: .1px solid var(--text-clr) !important;
+    border-bottom: .1px solid var(--text-clr) !important;
+
+}
+
+.miracle td:nth-child(1) {
+    border-left: .5px solid var(--text-clr) !important;
+}
+
+.miracle td:nth-child(2) button {
+    width: 100px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+.miracle td:nth-child(3) button {
+    width: 40px;
+    height: 24px;
+    margin-left: 5px;
+}
+
+.miracle td:nth-child(4) button {
+    height: 25px;
+}
+
+.miracle td:nth-child(5) {
+    border-right: .5px solid var(--text-clr) !important;
+}
+
+.miracle td:nth-child(5) button {
+    width: 100px;
+    height: 25px;
+    margin-inline: auto;
+}
+
+.miracle td:nth-child(3) input {
+    width: 40px;
+    margin-inline: auto;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline-color: var(--main-clr);
+    counter-increment: none;
+    resize: none;
+}
+
+.miracle td .flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+
+.miracle td button {
+    display: unset;
+    border: 0;
+    border-radius: 3px;
+    background: var(--main-clr);
+    color: white;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.miracle td button:hover {
+    background-color: var(--button-hover);
+    border: .5px solid rgb(200, 200, 10);
+}
+
+.calculator-box {
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    /* box-shadow: inset .5px .5px 2px var(--box-shadow); */
+    border-radius: 5px;
+    background-color: var(--transparent);
+    height: 20%;
+    overflow: hidden;
+}
+
+.calculator-box .details {
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-clr);
+}
+
+.calculator-box p {
+    width: 200px;
+    text-align: right;
+}
+
+.payments-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    border-radius: 5px;
+    background-color: var(--transparent);
+    margin-top: 2px;
+    margin-top: 2px;
+    padding: 1px;
+}
+
+.payments-box .btns {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.receipt-holder-box .btns button {
+    height: 30px;
+    width: 100px;
+    background-color: var(--main-clr);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.receipt-holder-box .btns button:hover {
+    background-color: var(--button-hover);
+}
+
+.payments-box .total {
+    width: 60%;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: right;
+    height: 40px;
+    align-items: center;
+    color: red;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px) {
+    .payments-box .total {
+        width: 50%;
+        gap: 20px;
+    }
+
+    .payments-box .total h1 {
+        font-size: 16px !important;
+    }
+}
+
+.payments-box .total h1 {
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.payments-box .total span {
+    width: 50%;
+    text-align: right;
+    padding-right: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 25px;
+    align-items: center;
+}
+
+.receipt-control-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    border-radius: 5px;
+    background-color: var(--transparent);
+    margin-top: 2px;
+    margin-top: 2px;
+    padding: 1px;
+}
+
+.receipt-control-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.receipt-control-box .control-btns {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 420px) {
+
+    .receipt-control-box .control-btns button,
+    .payments-box .btns button {
+        font-size: 11px !important;
+    }
+
+}
+
+.receipt-control-box .control-btns button:nth-child(3),
+.receipt-control-box .control-btns button:nth-child(4) {
+    background-color: var(--extra-clr);
+}
+
+.receipt-control-box .control-btns button {
+    height: 30px;
+    width: 100px;
+    background-color: var(--main-clr);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.receipt-control-box .control-btns button:hover {
+    transform: scale(1.05);
+    border: 2px solid yellow;
+}

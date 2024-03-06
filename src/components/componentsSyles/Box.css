@@ -1,0 +1,25 @@
+.box {
+    height: 90%;
+    display: flex;   
+    flex-direction: row;
+    position: relative;
+    overflow: auto;
+    background-color: transparent;
+    overflow-x: hidden;
+
+}
+.box::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--text-clr);
+    border-radius: 20pc;
+}
+.box::-webkit-scrollbar-thumb {
+    background-color: var(--main-clr);
+    border-radius: 20px;
+    width: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        justify-content: space-around;
+    }
+}

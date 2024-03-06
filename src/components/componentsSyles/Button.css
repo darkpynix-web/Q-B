@@ -1,0 +1,52 @@
+.button {
+    background: var(--main-clr);
+    border-radius: 5px;
+    width: 250px;
+    min-height: 60px;
+    margin-inline: auto;
+    font-size: 20px;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(234, 234, 234);
+    border: 1px solid var(--border-clr);
+    gap: 20px;
+    cursor: pointer;
+    transition: transform .5s ease;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.button .cont {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.button:nth-child(9) .cont p::before{
+    content: attr(data-counter);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 20px;
+}
+.button .cont p {
+    width: 170px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.button .cont img {
+    position: absolute;
+    left: 10px;
+}
+.button img {
+    width: 30px;
+    height: 30px;
+}
+
+.button:hover {
+    transform: scale(1.11);
+}

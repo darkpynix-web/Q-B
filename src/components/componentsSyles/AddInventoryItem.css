@@ -1,0 +1,278 @@
+.form-holder {
+    position: fixed;
+    height: 94%;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+.form-holder input {
+    outline-color: none;
+    
+}
+.form-holder form {
+    display: flex;
+    flex-direction: column;
+    width: min(70%, 600px);
+    height: min(75%, 500px);
+    background-color: var(--bg-clr);
+    border-radius: 11px;
+    position: relative;
+    box-shadow: 1px 1px 4px var(--box-shadow);
+
+}
+.form-holder .addCustomerForm {
+    height: min(45%, 500px);
+    overflow: hidden;
+}
+.form-holder form .form-head {
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-clr);
+    color: white;
+    padding-top: 5px;
+    font-family: 'Orbitron', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 200 ;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.form-holder form .form-head::after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-clr);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form-holder form .form-head button {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+
+}
+.form-holder .company-name {
+    width: 100%;
+    display: flex;
+}
+.form-holder form #name, .form-holder #companyName {
+    width: 97%;
+    margin-inline: auto;
+    height: 50px;
+    border: .5px solid var(--border-clr);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--text-clr);
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form-holder form .basic-info{
+    width: 99%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    margin-inline: auto;
+    border-radius: 5px;
+    height: 50%;
+    position: relative;
+}
+
+.form-holder .cus-full-name {
+    display: flex;
+    margin-inline: auto;
+    width: 90%;
+    justify-content: space-between;
+    color: var(--text-clr);
+}
+.form-holder .cus-full-name input {
+    height: 40px;
+    width: 40%;
+    border: 1px solid var(--border-clr);
+    /* outline-color: var(--main-clr);
+    outline-width: 0; */
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Roboto',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-holder form .contact-info-box {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    
+}
+
+.form-holder form .contact-info-box label {
+    text-align: center;
+    font-family: 'Orbitron', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+    color: var(--text-clr);
+}
+.form-holder form .contact-info-box ul {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.form-holder .addCustomerForm .control-buttons {
+    width: 80%;
+    margin-inline: auto;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-holder .addCustomerForm .control-buttons button {
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: var(--main-clr);
+    color: white;
+    font-family: 'orbitron';
+    
+}
+.form-holder .addCustomerForm .control-buttons button:hover {
+    background-color: var(--button-hover);
+}
+.form-holder form .contact-info-box ul li {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    color: var(--text-clr);
+}
+.form-holder form .contact-info-box input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--border-clr);
+    padding-left: 5px;
+    background-color: transparent;
+    font-size: 20px;
+}
+.form-holder form .basic-info label {
+    font-size: 15px;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:var(--text-clr);
+    font-weight: lighter;
+}
+.form-holder form .aedc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-holder form .basic-info input {
+    width: 80px;
+    height: 25px;
+    border: .5px solid var(--border-clr);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+}
+.form-holder form hr {
+    width: 80%;
+    border: .5px solid;
+    border-color: var(--border-clr);
+    margin-inline: auto;
+}
+.form-holder form .box {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 60%;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+
+.form-holder form .btn {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    background-color: var(--bg-clr);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form-holder form .btn button {
+    width: 100px;
+    height: 30px;
+    margin-top: -60px;
+    border-radius: 5px;
+    background-color: var(--transparent);
+    cursor: pointer;
+    color: var(--text-clr);
+    border: none;
+    outline-color: var(--main-clr);
+    box-shadow: 1px 1px 4px var(--text-shadow);
+    transform: .5s ease-in;
+}
+
+.form-holder form .btn button:hover {
+    border: 2px solid var(--main-clr);
+}
+
+.form-holder form .descripton-holder {
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-holder form .descripton-holder label {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left !important;
+}
+.form-holder form .descripton-holder textarea {
+    width: 94%;
+    height: 70%;
+    resize: none;
+    border-radius: 5px;
+    background-color: var(--dark);
+    border: .5px solid var(--border-clr);
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding: 5px;
+    margin-inline: auto;
+}
+
+.form-holder form input, .form-holder form textarea {
+    color: var(--text-clr);
+    border: 1px solid var(--border-clr) !important;
+}
+
+
+
+
+
+
+
+

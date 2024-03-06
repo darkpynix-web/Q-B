@@ -1,0 +1,234 @@
+.add-user-form-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.add-user-form-holder .remaining-details {
+    display: flex;
+    height: 40px;
+    margin-top: -50px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    gap: 5px;
+}
+
+.add-user-form-holder .remaining-details input {
+    width: 150px;
+    border: 1px solid var(--border-clr);
+    color: var(--text-clr);
+    border-radius: 5px;
+    padding: 3px;
+    background-color:transparent;
+
+}
+.add-user-form-holder .remaining-details select {
+    width: 150px;
+    border:  1px solid var(--border-clr);
+    border-radius: 5px;
+    background-color:transparent;
+    color: var(--text-clr);
+}
+.add-user-form .form-grid {
+    display: grid;
+    grid-template-areas:
+     'one two two'
+     'one two two'
+     'three three three'
+     ;
+     margin-top: 20px;
+}
+.add-user-form-holder .add-user-form form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-inline: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+.add-user-form-holder .add-user-form {
+    width: 600px;
+    height: 500px;
+    box-shadow: 1px 1px 4px black;
+    background-color: var(--bg-clr);
+    border-radius: 7px;
+}
+.add-user-form-holder .add-user-form .box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'one one two';
+}
+.add-user-form .profile-selected {
+    height: 170px ;
+    border: 2px solid var(--border-clr);
+    width: 170px;
+    grid-area: two;
+    margin-top: 25px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.add-user-form .profile-selected label {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.add-user-form form .hint {
+    font-family: 'Orbitron';
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: red;
+    font-weight: bolder !important;
+}
+.add-user-form form .header-label {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-clr);
+    position: relative;
+    border-radius: 7px;
+}
+.add-user-form form .header-label p {
+    margin-top: -20px;
+}
+
+
+.add-user-form form .header-label::after {
+    content: '';
+    height: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    background-color: var(--bg-clr);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.add-user-form-holder .add-user-form form .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 100px;
+    background-color: var(--main-clr);
+    align-items: center;
+    position: relative;
+}
+.add-user-form-holder .add-user-form form .loginbuttons{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 5px;
+    height: 100px;
+    position: relative;
+    grid-area: three;
+}
+.add-user-form-holder .add-user-form form .carrier {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.add-user-form-holder .add-user-form form .loginbuttons button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--bg-clr);
+    cursor: pointer;
+    color: var(--text-clr);
+    border: 1px double rgb(94, 93, 93);
+    outline-color: var(--main-clr);
+    
+}
+.add-user-form-holder .add-user-form form .loginbuttons button:hover {
+    box-shadow: 1px 1px 4px var(--hover-clr);
+    border: none;
+}
+.add-user-form-holder .add-user-form form .bottom::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background-color: var(--bg-clr);
+    height: 10px;
+    top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.add-user-form .details-holder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    grid-area: one;
+}
+
+.add-user-form .field{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline-color: var(--main-clr);
+}
+
+
+.add-user-form .details-holder input {
+    height: 44px;
+    border: .5px solid var(--border-clr);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 5px;
+    outline: none;
+    color: var(--text-clr);
+    background-color: var(--bg-clr);
+}
+.add-user-form .details-holder input:focus {
+    border: 2px solid var(--main-clr);
+}
+
+.add-user-form .details-holder label {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    margin-top: -5px;
+    height: 9px;
+    position: absolute;
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
+    padding-left: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 9px;
+    text-align: center;
+    border-left: .2px solid var(--border-clr);
+    border-right: .2px solid var(--border-clr);
+}
+.add-user-form .details-holder label P {
+    margin-top: -5px;
+}

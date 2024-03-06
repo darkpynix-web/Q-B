@@ -1,0 +1,40 @@
+.quick-select-items {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+.quick-select-items::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--border-clr);
+    border-radius: 10px;
+}
+.quick-select-items::-webkit-scrollbar-thumb {
+    background-color: var(--text-clr);
+    border-radius: 20px;
+}
+.quick-select-items .active {
+    background-color: var(--main-clr);
+    color: white !important;
+}
+
+.quick-select-items .active td {
+    color: white;
+}
+
+.quick-select-items h3 {
+    color: var(--text-clr);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    margin-inline: auto;
+    align-items: center;
+    height:200px;
+}
+.quick-select-items table th{
+    resize: none !important;
+}
+.quick-select-items td:nth-child(3) {
+    text-align: right;
+
+}

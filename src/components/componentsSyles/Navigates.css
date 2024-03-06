@@ -1,0 +1,56 @@
+.navigates {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -0px;
+    cursor: pointer;
+    background-color: transparent;
+    animation: pinut .5s linear;
+}
+
+@keyframes pinut {
+    0% {
+        transform: scale(.01);
+    }
+    50% {
+        transform: scale(.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.navigates img:hover {
+    height: 70px;
+    width: 70px;
+    filter: drop-shadow(2px 2px 20px var(--main-clr));
+}
+.navigates p {
+    font-size: 12px;
+    width: 150px;
+    text-align: center;
+    color: var(--text-clr);
+    font-weight: bold;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navigates img {
+    width: 50px;
+    height: 50px;
+    transition: .1s ease-in;
+}
+
+@media screen and (max-width: 750px ) {
+    .navigates p {
+        font-size: 10px;
+        max-width: 50px !important;
+        text-align: center !important;
+    }
+
+    .navigates img {
+        width: 40px;
+        height: 40px;
+    }
+}

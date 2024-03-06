@@ -1,0 +1,61 @@
+.receipt-preview-box {
+    height: 90%;
+    width: min(50%, 1000px);
+    background-color: var(--dark-mode);
+    position: absolute;
+    right: 0;
+    resize:vertical ;
+    border-left: 2px solid var(--border-clr);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-left: 5px;
+    max-width: 2000px;
+}
+.receipt-preview-box::after {
+    content: '';
+    height: 100%;
+    width: 10px;
+    background-color: var(--dark-mode);
+    position: absolute;
+    left: -1px;
+    cursor: ew-resize;
+}
+.receipt-preview-box::after:hover {
+    cursor:grab;
+}
+.receipt-preview-box .label {
+    background-color: var(--main-clr);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    justify-content: right;
+}
+
+.receipt-preview-box .item-lister {
+    position: unset;
+}
+.receipt-preview-box .label button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-clr);
+    border: 0;
+    border-radius: 5px;
+    color: var(--text-clr);
+}
+
+.receipt-preview-box .item-lister-table {
+    margin-top: unset;
+}
+
+.receipt-preview-box .customer-name-space {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Roboto',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text-clr);
+    background-color: var(--dark-mode);
+}

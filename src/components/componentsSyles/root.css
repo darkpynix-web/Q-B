@@ -1,0 +1,47 @@
+:root {
+    --bg-clr: white;
+    --main-clr: rgba(5, 115, 240, 0.851);
+    --text-clr: rgb(29, 28, 28);
+    --extra-clr: rgb(39, 156, 3);
+    --extra2-clr: rgb(156, 247, 129);
+    --border-clr: rgb(200, 200, 200);
+    --hover-clr: rgba(45, 122, 173, 0.441);
+    --X-tra: rgba(5, 115, 240, 0.851);
+    --dark-clr: rgb(53, 52, 52);
+    --box-shadow: rgb(140, 140, 140);
+    --inset-shadow: rgba(141, 141, 141, 0.507);
+    --table-tr:rgb(220, 219, 219);
+    --grid-clr: rgb(204, 239, 253);
+    --mixed-clr: radial-gradient(white, var(--grid-clr));
+    --none-mixed-clr: var(--dark-clr);
+    --dark-mode: #f4f4f4;
+    --table-clr: transparent;
+    --row-clr: rgb(165, 165, 165);
+    --transparent: white;
+    --button-hover: rgb(99, 182, 250);
+    --text-shadow: rgb(9, 9, 9);
+    --text-x: white;
+}
+
+
+.dark-mode {
+    --text-x: var(--text-clr);
+    --hover-clr: rgba(195, 195, 195, 0.25);
+    --text-shadow: black;
+    --table-clr: rgb(53, 52, 52);
+    --bg-clr: rgb(4, 4, 4);
+    --text-clr: rgb(189, 189, 189);
+    --border-clr: rgb(100, 100, 100);
+    --box-shadow: rgb(4, 4, 4);
+    --mixed-clr: rgb(31, 31, 31);
+    --main-clr: rgba(4, 98, 205, 0.851);
+    --table-tr: rgba(86, 86, 86, 0.42);
+    --dark-clr: rgb(1, 102, 175);
+    --extra-clr: rgb(48, 205, 1);
+    --X-tra: rgb(199, 199, 199);
+    --dark-mode: rgb(35, 35, 35);
+    --row-clr: rgb(197, 196, 196);
+    --extra2-clr: rgba(0, 255, 60, 0.656);
+    --transparent: var(--dark-mode);
+    --button-hover: rgb(56, 135, 246);
+}

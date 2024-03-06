@@ -1,0 +1,113 @@
+.grid {
+    border: .5px solid var(--border-clr);
+    border-radius: 5px;
+    position: relative;
+    background: var(--mixed-clr);
+}
+
+.grid::before {
+    content: attr(data-content);
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    transform: rotate(180deg);
+    left: 0;
+    background-color: var(--main-clr);
+    writing-mode:vertical-rl;
+    text-orientation:mixed;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(229, 228, 228);
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.grid:nth-child(1) {
+    grid-area: one;
+    max-height: 300px;
+    animation: childOne .2s linear;
+}
+
+.grid:nth-child(2) {
+    grid-area: two;
+    max-height: 300px;
+    animation-delay:4ms;
+    animation-play-state: running;
+    animation: childFour .2s linear;
+}
+.grid:nth-child(3) {
+    grid-area: three;
+    max-height: 300px;
+    animation: childTwo .2s linear;
+}
+.grid:nth-child(4) {
+    grid-area: four;
+    animation: childThree .2s linear;
+    /* max-width: 300px; */
+}
+
+@keyframes childOne {
+    0% {
+        left:  -100px;
+    }
+    50% {
+        left: -50px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes childFour {
+    0% {
+        top:  -100px;
+        opacity: 0;
+    }
+    50% {
+        top: -50px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes childThree {
+    0% {
+        right:  -100px;
+    }
+    50% {
+        right: -50px;
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes childTwo {
+    0% {
+        bottom:  -100px;
+    }
+    50% {
+        bottom: -50px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 750) {
+    .grid:nth-child(4) {
+        max-height: 300px !important; 
+    }
+}
+.grid:nth-child(4):before {
+    right: 0;
+    left: unset;
+    transform: unset;
+}
+
+
+@media screen and (max-width: 750px) {
+    .grid:nth-child(4):before {
+        right: unset;
+        left: 0;
+        transform: rotate(180deg);
+    }
+}

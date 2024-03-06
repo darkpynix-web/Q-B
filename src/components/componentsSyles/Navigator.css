@@ -1,0 +1,80 @@
+.navigator {
+    height:84%;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    display: grid;
+    background-color:transparent;
+    gap: 10px;
+    grid-template-areas:
+        'one one four'
+        'two two four'
+        'three three four'
+    ;
+    border: 2px solid var(--border-clr);
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 750px) {
+    .navigator {
+        grid-template-areas: 
+        'one one one one'
+        'two two two two'
+        'three three three three'
+        'four four four four'
+        ;
+    }
+}
+.purchasing-box, .quickBookPointOfSale-box, .operations-box, .employee-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    position: relative;
+    overflow: hidden;
+    width: 100% !important;
+    
+}
+.quickBookPointOfSale-box  .navigates:nth-child(6)::after {
+    content: attr(data-counter);
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border: 2px solid var(--dark-mode);
+    font-size: 12px;
+    background-color: red;
+    font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quickBookPointOfSale-box  .navigates:nth-child(6) {
+    position: relative;
+}
+.operations-box {
+    grid-template-columns: 1fr !important;
+    place-items: center;
+    padding-left: unset;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .operations-box {
+        grid-template-columns: repeat(4, 1fr) !important;
+        padding-left: 8%;
+        justify-content: center;
+        padding-top: unset;
+
+    }
+    .ad-box {
+        display: none !important;
+    }
+}
